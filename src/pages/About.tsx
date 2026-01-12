@@ -1,5 +1,5 @@
 import Layout from "@/components/layout/Layout";
-import { CheckCircle, Target, Eye, Award, Users, Lightbulb, Leaf, Star, Quote } from "lucide-react";
+import { CheckCircle, Target, Eye, Award, Users, Lightbulb, Leaf } from "lucide-react";
 
 const About = () => {
   const values = [
@@ -11,169 +11,105 @@ const About = () => {
     { icon: Leaf, title: "Sustainability", description: "Committed to sustainable sourcing and ethical business practices." },
   ];
 
-  const clientReviews = [
-    {
-      name: "John Mitchell",
-      company: "European Footwear Ltd.",
-      location: "London, UK",
-      rating: 5,
-      review: "Crew Impex has been our trusted partner for over 3 years. Their commitment to quality and timely delivery is unmatched. Every shipment arrives exactly as promised.",
-    },
-    {
-      name: "Sarah Thompson",
-      company: "Global Retail Solutions",
-      location: "New York, USA",
-      rating: 5,
-      review: "Working with Crew Impex has transformed our supply chain. Their attention to detail and proactive communication make international trade seamless.",
-    },
-    {
-      name: "Ahmed Hassan",
-      company: "Middle East Trading Co.",
-      location: "Dubai, UAE",
-      rating: 5,
-      review: "The quality of footwear from Crew Impex exceeds expectations every time. Their team understands our market needs and delivers consistently.",
-    },
-    {
-      name: "Maria Garcia",
-      company: "Calzado Imports",
-      location: "Madrid, Spain",
-      rating: 5,
-      review: "Reliable, professional, and always on time. Crew Impex has become an indispensable partner for our European distribution network.",
-    },
-  ];
-
   return (
     <Layout>
       {/* Hero */}
-      <section className="bg-primary py-24">
+      <section className="bg-primary py-16 md:py-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl">
-            <p className="text-secondary font-medium tracking-widest uppercase mb-4">About Us</p>
-            <h1 className="text-4xl md:text-5xl font-display font-bold text-primary-foreground mb-6">
+          <div className="max-w-2xl">
+            <p className="text-secondary text-sm font-medium tracking-widest uppercase mb-3">About Us</p>
+            <h1 className="text-3xl md:text-4xl font-display text-primary-foreground mb-4">
               Building Trust Through <span className="text-secondary">Consistent Action</span>
             </h1>
-            <p className="text-primary-foreground/80 text-lg leading-relaxed">
-              In the ever-evolving landscape of global trade, one thing remains constant: the need for trust, quality, and efficiency. At Crew Impex, we understand these needs deeply.
+            <p className="text-primary-foreground/80 text-base leading-relaxed">
+              In the ever-evolving landscape of global trade, one thing remains constant: the need for trust, quality, and efficiency.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Story */}
-      <section className="py-24 bg-background">
+      {/* About Company */}
+      <section className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="text-3xl font-display font-bold text-foreground mb-6">Our Story</h2>
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                Founded on the principles of integrity, professionalism, and dedication, Crew Impex has grown into a reliable export company recognized for delivering high-quality products with minimal transit time.
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-2xl font-display text-foreground mb-5">Who We Are</h2>
+            <div className="space-y-4 text-muted-foreground text-sm leading-relaxed">
+              <p>
+                Crew Impex is a trusted export company specializing in high-quality footwear. We deliver premium products including formal shoes, casual wear, boots, sports shoes, and sneakers to businesses worldwide.
               </p>
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                Our journey began with a simple vision—to create an export business that does not just transact but transforms the way businesses experience trade. Over the years, we have stayed true to that vision, building a company where actions speak louder than words.
+              <p>
+                Our focus is simple: provide exceptional products with reliable service. We work closely with our clients to understand their needs and deliver solutions that meet international quality standards.
               </p>
-              <p className="text-muted-foreground leading-relaxed">
-                Every client interaction is an opportunity to showcase our commitment to excellence. We believe in earning trust through consistent action, exceeding expectations, and providing solutions that make international trade seamless and reliable.
+              <p>
+                What sets us apart is our commitment to action over words. Every interaction is an opportunity to demonstrate our dedication to excellence, ensuring that your products reach their destination on time and in perfect condition.
               </p>
-            </div>
-            <div className="bg-muted rounded-lg p-12">
-              <div className="grid grid-cols-2 gap-8 text-center">
-                <div>
-                  <p className="text-5xl font-display font-bold text-secondary">10+</p>
-                  <p className="text-muted-foreground mt-2">Years Experience</p>
-                </div>
-                <div>
-                  <p className="text-5xl font-display font-bold text-secondary">50+</p>
-                  <p className="text-muted-foreground mt-2">Countries Served</p>
-                </div>
-                <div>
-                  <p className="text-5xl font-display font-bold text-secondary">500+</p>
-                  <p className="text-muted-foreground mt-2">Happy Clients</p>
-                </div>
-                <div>
-                  <p className="text-5xl font-display font-bold text-secondary">98%</p>
-                  <p className="text-muted-foreground mt-2">On-Time Delivery</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-24 bg-muted">
+      <section className="py-16 md:py-20 bg-muted">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12">
-            <div className="bg-card border border-border rounded-lg p-10">
-              <div className="w-16 h-16 rounded-full bg-secondary/20 flex items-center justify-center mb-6">
-                <Target size={32} className="text-secondary" />
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="bg-card border border-border rounded-lg p-6 md:p-8">
+              <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center mb-4">
+                <Target size={24} className="text-secondary" />
               </div>
-              <h3 className="text-2xl font-display font-bold text-foreground mb-4">Our Mission</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                To deliver top-quality products to our clients around the world with efficiency, reliability, and speed. We make it our priority to ensure that every product meets stringent quality standards and reaches its destination in the shortest possible time.
+              <h3 className="text-xl font-display text-foreground mb-3">Our Mission</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                To deliver top-quality products with efficiency, reliability, and speed. We ensure every product meets stringent quality standards and reaches its destination in the shortest possible time.
               </p>
             </div>
-            <div className="bg-card border border-border rounded-lg p-10">
-              <div className="w-16 h-16 rounded-full bg-secondary/20 flex items-center justify-center mb-6">
-                <Eye size={32} className="text-secondary" />
+            <div className="bg-card border border-border rounded-lg p-6 md:p-8">
+              <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center mb-4">
+                <Eye size={24} className="text-secondary" />
               </div>
-              <h3 className="text-2xl font-display font-bold text-foreground mb-4">Our Vision</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                To be recognized as a global leader in exports, not only for the quality of our products but also for the reliability of our services and the strength of our client relationships. We aim to set industry benchmarks in speed, quality, and customer satisfaction.
+              <h3 className="text-xl font-display text-foreground mb-3">Our Vision</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                To be recognized as a reliable partner in global exports—known for the quality of our products, the reliability of our services, and the strength of our client relationships.
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Client Reviews */}
-      <section className="py-24 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <p className="text-secondary font-medium tracking-widest uppercase mb-4">Client Reviews</p>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              What Our Clients Say
-            </h2>
-          </div>
-          <div className="grid md:grid-cols-2 gap-8">
-            {clientReviews.map((review, index) => (
-              <div key={index} className="bg-card border border-border rounded-lg p-8 relative">
-                <Quote size={40} className="text-secondary/20 absolute top-6 right-6" />
-                <div className="flex gap-1 mb-4">
-                  {[...Array(review.rating)].map((_, i) => (
-                    <Star key={i} size={18} className="text-secondary fill-secondary" />
-                  ))}
-                </div>
-                <p className="text-muted-foreground leading-relaxed mb-6 italic">
-                  "{review.review}"
-                </p>
-                <div>
-                  <p className="font-display font-semibold text-foreground">{review.name}</p>
-                  <p className="text-sm text-muted-foreground">{review.company}</p>
-                  <p className="text-sm text-secondary">{review.location}</p>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </section>
 
       {/* Values */}
-      <section className="py-24 bg-primary">
+      <section className="py-16 md:py-20 bg-primary">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <p className="text-secondary font-medium tracking-widest uppercase mb-4">Our Values</p>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-primary-foreground">
+          <div className="text-center mb-10">
+            <p className="text-secondary text-sm font-medium tracking-widest uppercase mb-3">Our Values</p>
+            <h2 className="text-2xl md:text-3xl font-display text-primary-foreground">
               What Drives Us Forward
             </h2>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {values.map((value, index) => (
-              <div key={index} className="bg-primary-foreground/5 border border-primary-foreground/10 rounded-lg p-8">
-                <value.icon size={32} className="text-secondary mb-4" />
-                <h3 className="text-xl font-display font-semibold text-primary-foreground mb-3">{value.title}</h3>
-                <p className="text-primary-foreground/70">{value.description}</p>
+              <div key={index} className="bg-primary-foreground/5 border border-primary-foreground/10 rounded-lg p-6">
+                <value.icon size={24} className="text-secondary mb-3" />
+                <h3 className="text-base font-display text-primary-foreground mb-2">{value.title}</h3>
+                <p className="text-primary-foreground/70 text-sm">{value.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* What We Export */}
+      <section className="py-16 md:py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-2xl font-display text-foreground mb-5">What We Export</h2>
+            <p className="text-muted-foreground text-sm mb-8">
+              We specialize in exporting a wide range of high-quality footwear designed for global markets.
+            </p>
+            <div className="flex flex-wrap justify-center gap-3">
+              {["Formal Shoes", "Casual Footwear", "Boots", "Sports Shoes", "Sneakers"].map((item) => (
+                <span key={item} className="px-4 py-2 bg-muted text-foreground text-sm rounded-full">
+                  {item}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </section>

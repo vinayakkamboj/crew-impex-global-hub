@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Mail, Phone, MapPin, Globe, Send, CheckCircle } from "lucide-react";
+import { Mail, Phone, MapPin, Send, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -31,79 +31,79 @@ const Contact = () => {
   };
 
   const contactInfo = [
-    { icon: Mail, label: "Email", value: "info@crewimpex.com" },
-    { icon: Phone, label: "Phone", value: "+91 9915815334 / +91 8755406105 / +91 98999 23754" },
-    { icon: MapPin, label: "Address", value: "Wave City, Ghaziabad, Uttar Pradesh, India 201010" },
-    { icon: Globe, label: "Website", value: "www.crewimpex.com" },
+    { icon: Mail, label: "Email", value: "sales@crewimpex.com" },
+    { icon: Phone, label: "Phone", value: "+91 9876543210" },
+    { icon: MapPin, label: "Address", value: "Ghaziabad, Uttar Pradesh, India 201010" },
   ];
 
   return (
     <Layout>
       {/* Hero */}
-      <section className="bg-primary py-24">
+      <section className="bg-primary py-16 md:py-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl">
-            <p className="text-secondary font-medium tracking-widest uppercase mb-4">Contact Us</p>
-            <h1 className="text-4xl md:text-5xl font-display font-bold text-primary-foreground mb-6">
+          <div className="max-w-2xl">
+            <p className="text-secondary text-sm font-medium tracking-widest uppercase mb-3">Contact Us</p>
+            <h1 className="text-3xl md:text-4xl font-display text-primary-foreground mb-4">
               Let's Start a <span className="text-secondary">Conversation</span>
             </h1>
-            <p className="text-primary-foreground/80 text-lg leading-relaxed">
-              Have questions about our products or services? Ready to place an order? Our team is here to help you with all your export needs.
+            <p className="text-primary-foreground/80 text-base leading-relaxed">
+              Have questions about our products or services? Ready to place an order? We're here to help.
             </p>
           </div>
         </div>
       </section>
 
       {/* Contact Form & Info */}
-      <section className="py-24 bg-background">
+      <section className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-5 gap-12">
+          <div className="grid lg:grid-cols-5 gap-10">
             {/* Contact Info */}
             <div className="lg:col-span-2">
-              <h2 className="text-2xl font-display font-bold text-foreground mb-6">Get In Touch</h2>
-              <p className="text-muted-foreground mb-8">
-                We're always ready to hear from you. Reach out through any of the channels below or fill out the inquiry form.
+              <h2 className="text-xl font-display text-foreground mb-4">Get In Touch</h2>
+              <p className="text-muted-foreground text-sm mb-6">
+                Reach out through any of the channels below or fill out the inquiry form.
               </p>
-              <div className="space-y-6">
+              <div className="space-y-5">
                 {contactInfo.map((item, index) => (
-                  <div key={index} className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center flex-shrink-0">
-                      <item.icon size={20} className="text-secondary" />
+                  <div key={index} className="flex items-start gap-3">
+                    <div className="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center flex-shrink-0">
+                      <item.icon size={18} className="text-secondary" />
                     </div>
                     <div>
-                      <p className="text-sm text-muted-foreground">{item.label}</p>
-                      <p className="text-foreground font-medium">{item.value}</p>
+                      <p className="text-xs text-muted-foreground uppercase tracking-wide">{item.label}</p>
+                      <p className="text-foreground text-sm font-medium">{item.value}</p>
                     </div>
                   </div>
                 ))}
               </div>
 
-              <div className="mt-12 p-6 bg-muted rounded-lg">
-                <h3 className="font-display font-semibold text-foreground mb-3">Business Hours</h3>
-                <p className="text-muted-foreground text-sm">Monday - Friday: 9:00 AM - 6:00 PM</p>
-                <p className="text-muted-foreground text-sm">Saturday: 10:00 AM - 4:00 PM</p>
-                <p className="text-muted-foreground text-sm">Sunday: Closed</p>
+              <div className="mt-8 p-5 bg-muted rounded-lg">
+                <h3 className="font-display text-sm text-foreground mb-2">Business Hours</h3>
+                <p className="text-muted-foreground text-xs">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                <p className="text-muted-foreground text-xs">Saturday: 10:00 AM - 4:00 PM</p>
+                <p className="text-muted-foreground text-xs">Sunday: Closed</p>
               </div>
             </div>
 
             {/* Form */}
             <div className="lg:col-span-3">
-              <div className="bg-card border border-border rounded-lg p-8">
-                <h2 className="text-2xl font-display font-bold text-foreground mb-6">Send Us an Inquiry</h2>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-card border border-border rounded-lg p-6 md:p-8">
+                <h2 className="text-xl font-display text-foreground mb-5">Send Us an Inquiry</h2>
+                <form onSubmit={handleSubmit} className="space-y-5">
+                  <div className="grid md:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-sm font-medium text-foreground mb-2">Full Name *</label>
+                      <label className="block text-xs font-medium text-foreground mb-1.5">Full Name *</label>
                       <Input
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
                         placeholder="Your name"
                         required
+                        className="h-10 text-sm"
                       />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-foreground mb-2">Email Address *</label>
+                      <label className="block text-xs font-medium text-foreground mb-1.5">Email Address *</label>
                       <Input
                         type="email"
                         name="email"
@@ -111,37 +111,40 @@ const Contact = () => {
                         onChange={handleChange}
                         placeholder="your@email.com"
                         required
+                        className="h-10 text-sm"
                       />
                     </div>
                   </div>
-                  <div className="grid md:grid-cols-2 gap-6">
+                  <div className="grid md:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-sm font-medium text-foreground mb-2">Company Name</label>
+                      <label className="block text-xs font-medium text-foreground mb-1.5">Company Name</label>
                       <Input
                         name="company"
                         value={formData.company}
                         onChange={handleChange}
                         placeholder="Your company"
+                        className="h-10 text-sm"
                       />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-foreground mb-2">Phone Number</label>
+                      <label className="block text-xs font-medium text-foreground mb-1.5">Phone Number</label>
                       <Input
                         type="tel"
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
-                        placeholder="+1 (555) 000-0000"
+                        placeholder="+91 XXXXX XXXXX"
+                        className="h-10 text-sm"
                       />
                     </div>
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">Product Interest</label>
+                    <label className="block text-xs font-medium text-foreground mb-1.5">Product Interest</label>
                     <select
                       name="product"
                       value={formData.product}
                       onChange={handleChange}
-                      className="w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm"
+                      className="w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-ring"
                     >
                       <option value="">Select a product category</option>
                       <option value="formals">Formals</option>
@@ -153,18 +156,19 @@ const Contact = () => {
                     </select>
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">Your Message *</label>
+                    <label className="block text-xs font-medium text-foreground mb-1.5">Your Message *</label>
                     <Textarea
                       name="message"
                       value={formData.message}
                       onChange={handleChange}
-                      placeholder="Tell us about your requirements, order quantity, and any specific needs..."
-                      rows={5}
+                      placeholder="Tell us about your requirements..."
+                      rows={4}
                       required
+                      className="text-sm"
                     />
                   </div>
-                  <Button type="submit" size="lg" className="w-full bg-secondary text-secondary-foreground hover:bg-secondary/90 gap-2">
-                    <Send size={18} /> Submit Inquiry
+                  <Button type="submit" size="lg" className="w-full bg-secondary text-secondary-foreground hover:bg-secondary/90 gap-2 h-11 text-sm font-medium">
+                    <Send size={16} /> Submit Inquiry
                   </Button>
                 </form>
               </div>
@@ -174,19 +178,19 @@ const Contact = () => {
       </section>
 
       {/* Why Contact Us */}
-      <section className="py-16 bg-muted">
+      <section className="py-12 bg-muted">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-6">
             {[
               { title: "Quick Response", description: "Get a reply within 24 hours" },
               { title: "Expert Guidance", description: "Our team helps you choose the right products" },
               { title: "Competitive Pricing", description: "Best rates for bulk orders" },
             ].map((item, index) => (
-              <div key={index} className="flex items-start gap-4">
-                <CheckCircle size={24} className="text-secondary flex-shrink-0 mt-1" />
+              <div key={index} className="flex items-start gap-3">
+                <CheckCircle size={20} className="text-secondary flex-shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="font-display font-semibold text-foreground mb-1">{item.title}</h3>
-                  <p className="text-muted-foreground text-sm">{item.description}</p>
+                  <h3 className="font-display text-sm text-foreground mb-0.5">{item.title}</h3>
+                  <p className="text-muted-foreground text-xs">{item.description}</p>
                 </div>
               </div>
             ))}
