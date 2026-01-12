@@ -32,8 +32,8 @@ const Contact = () => {
 
   const contactInfo = [
     { icon: Mail, label: "Email", value: "sales@crewimpex.com" },
-    { icon: Phone, label: "Phone", value: "+91 9876543210" },
-    { icon: MapPin, label: "Address", value: "Ghaziabad, Uttar Pradesh, India 201010" },
+    { icon: Phone, label: "Phone", value: "+91 9915815334"},
+    { icon: MapPin, label: "Address", value: "Wave City-Ghaziabad, Uttar Pradesh, India 201010" },
   ];
 
   return (
@@ -80,8 +80,7 @@ const Contact = () => {
               <div className="mt-8 p-5 bg-muted rounded-lg">
                 <h3 className="font-display text-sm text-foreground mb-2">Business Hours</h3>
                 <p className="text-muted-foreground text-xs">Monday - Friday: 9:00 AM - 6:00 PM</p>
-                <p className="text-muted-foreground text-xs">Saturday: 10:00 AM - 4:00 PM</p>
-                <p className="text-muted-foreground text-xs">Sunday: Closed</p>
+                <p className="text-muted-foreground text-xs">Saturday- Sunday: 10:00 AM - 4:00 PM</p>
               </div>
             </div>
 

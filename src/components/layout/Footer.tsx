@@ -60,13 +60,17 @@ const Footer = () => {
                 <Mail size={14} className="text-secondary" />
                 <span>sales@crewimpex.com</span>
               </li>
-              <li className="flex items-center gap-3 text-primary-foreground/70 text-xs">
-                <Phone size={14} className="text-secondary" />
-                <span>+91 9876543210</span>
+              <li className="flex items-start gap-6 text-primary-foreground/70 text-xs">
+              <Phone size={14} className="text-secondary mt-0.5" />
+              <div className="flex flex-col gap-1">
+                <span>+91 9915815334</span>
+                <span>+91 9899923754</span>
+                <span>+91 8755406105</span>
+                </div>
               </li>
               <li className="flex items-start gap-3 text-primary-foreground/70 text-xs">
                 <MapPin size={14} className="text-secondary mt-0.5" />
-                <span>Ghaziabad, Uttar Pradesh, India 201010</span>
+                <span>Wave City, Ghaziabad, Uttar Pradesh, India 201010</span>
               </li>
             </ul>
           </div>

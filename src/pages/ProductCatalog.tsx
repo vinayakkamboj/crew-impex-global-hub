@@ -18,8 +18,7 @@ import Casualshoes3 from "@/assets/Casuals_img3.jpeg";
 import Casualshoes4 from "@/assets/Casuals_img4.jpeg";
 import Casualshoes5 from "@/assets/Casuals_img5.jpg";
 import Casualshoes6 from "@/assets/Casual.jpg";
-import Casualshoes7 from "@/assets/Casual.jpg";
-import Casualshoes8 from "@/assets/Casual.jpg";
+
 
 
 import BootShoes1 from "@/assets/women_boots_img1.jpg";
@@ -29,16 +28,16 @@ import BootShoes4 from "@/assets/women_boots_img4.jpg";
 import BootShoes5 from "@/assets/women_boots_img5.jpg";
 import BootShoes6 from "@/assets/women_boots_img6.jpg";
 import BootShoes7 from "@/assets/Boots_img7.jpg";
-import BootShoes8 from "@/assets/Boots_img8.png";
+
 
 import SneakersShoes1 from "@/assets/Sneaker_img1.jpeg";
 import SneakersShoes2 from "@/assets/Sneaker_img2.jpeg.jpg";
 import SneakersShoes3 from "@/assets/Sneaker_img3.jpg";
 import SneakersShoes4 from "@/assets/Sneaker_img4.jpg";
 import SneakersShoes5 from "@/assets/Sneaker_img5.jpg";
-import SneakersShoes6 from "@/assets/Sneakers_img1.jpg";
+import SneakersShoes6 from "@/assets/Sneakers_img8.jpg";
 import SneakersShoes7 from "@/assets/sneakers.jpg";
-import SneakersShoes8 from "@/assets/Boots_img8.png";
+import SneakersShoes8 from "@/assets/Sneakers_img9.avif";
 
 import SportsShoes1 from "@/assets/Sports_img1.jpg";
 import SportsShoes2 from "@/assets/Sports_img2.jpg";
@@ -46,6 +45,8 @@ import SportsShoes3 from "@/assets/Sports_img3.jpg";
 import SportsShoes4 from "@/assets/Sports_img4.avif";
 import SportsShoes5 from "@/assets/Sports_img5.jpg";
 import SportsShoes6 from "@/assets/Sports_img6.jpg";
+import SportsShoes7 from "@/assets/Sports_img7.jpg";
+
 
 
 const catalogItems = {
@@ -64,8 +65,7 @@ const catalogItems = {
     { id: 4, name: "Espadrilles", image: Casualshoes4, colors: ["Blue", "Beige"] },
     { id: 5, name: "Moccasins", image: Casualshoes5, colors: ["Brown", "Tan", "Burgundy"] },
     { id: 6, name: "Suede Loafer", image: Casualshoes6, colors: ["Navy", "Grey", "Brown"] },
-    { id: 7, name: "Driving Shoes", image: Casualshoes7, colors: ["Black", "Brown"] },
-    { id: 8, name: "Deck Shoes", image: Casualshoes8, colors: ["White", "Navy"] },
+
   ],
   boots: [
     { id: 1, name: "Chelsea Boot", image: BootShoes1, colors: ["Black", "Brown"] },
@@ -75,7 +75,6 @@ const catalogItems = {
     { id: 5, name: "Combat Boot", image: BootShoes5, colors: ["Black", "Brown"] },
     { id: 6, name: "Desert Boot", image: BootShoes6, colors: ["Sand", "Brown", "Grey"] },
     { id: 7, name: "Lace-Up Boot", image: BootShoes7, colors: ["Black", "Tan"] },
-    { id: 8, name: "Zip Boot", image: BootShoes8, colors: ["Black", "Brown"] },
   ],
   sports: [
     { id: 1, name: "Running Pro", image:SportsShoes1, colors: ["Red", "Black", "Blue"] },
@@ -84,6 +83,8 @@ const catalogItems = {
     { id: 4, name: "Training Max", image:SportsShoes4, colors: ["Black", "Grey"] },
     { id: 5, name: "Football Cleats", image:SportsShoes5, colors: ["Black", "White", "Gold"] },
     { id: 6, name: "Cross Trainer", image: SportsShoes6, colors: ["Navy", "Grey"] },
+    { id: 7, name: "Grey Sporty", image: SportsShoes7, colors: ["Navy", "Grey"] },
+
     
   ],
   sneakers: [
