@@ -47,21 +47,33 @@ const AboutPreview = () => {
               </Button>
             </Link>
           </div>
-
           <div className="relative">
-            <div className="bg-primary rounded-lg p-12 text-center">
-              <p className="text-6xl md:text-8xl font-display font-bold text-secondary mb-4">
-                10+
+            <div className="bg-primary rounded-lg p-10 text-center">
+              <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-6">
+                <CheckCircle size={32} className="text-secondary-foreground" />
+              </div>
+              <p className="text-2xl md:text-3xl font-display font-bold text-primary-foreground mb-4">
+                Our Commitment
               </p>
-              <p className="text-primary-foreground text-xl">Years of Excellence</p>
-              <div className="mt-8 grid grid-cols-2 gap-6">
-                <div>
-                  <p className="text-3xl font-bold text-primary-foreground">500+</p>
-                  <p className="text-primary-foreground/60 text-sm">Happy Clients</p>
+              <p className="text-primary-foreground/80 text-sm mb-8">
+                Building lasting partnerships through reliability
+              </p>
+              <div className="space-y-4 text-left">
+                <div className="flex items-center gap-3 bg-primary-foreground/10 rounded-lg p-3">
+                  <div className="w-2 h-2 bg-secondary rounded-full" />
+                  <span className="text-primary-foreground text-sm">100% Quality Assured Products</span>
                 </div>
-                <div>
-                  <p className="text-3xl font-bold text-primary-foreground">50+</p>
-                  <p className="text-primary-foreground/60 text-sm">Countries</p>
+                <div className="flex items-center gap-3 bg-primary-foreground/10 rounded-lg p-3">
+                  <div className="w-2 h-2 bg-secondary rounded-full" />
+                  <span className="text-primary-foreground text-sm">Transparent Business Practices</span>
+                </div>
+                <div className="flex items-center gap-3 bg-primary-foreground/10 rounded-lg p-3">
+                  <div className="w-2 h-2 bg-secondary rounded-full" />
+                  <span className="text-primary-foreground text-sm">On-Time Delivery Guarantee</span>
+                </div>
+                <div className="flex items-center gap-3 bg-primary-foreground/10 rounded-lg p-3">
+                  <div className="w-2 h-2 bg-secondary rounded-full" />
+                  <span className="text-primary-foreground text-sm">Dedicated Support Team</span>
                 </div>
               </div>
             </div>

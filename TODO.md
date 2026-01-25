@@ -1,0 +1,9 @@
+- [x] Modify convertToBase64 function in Contact.tsx to compress image (resize to max 800px, JPEG quality 0.7) before base64 conversion
+- [x] Remove ImgBB upload function and use compressed base64 directly
+- [x] Remove image attachment from EmailJS payload to avoid 413 error
+- [x] Implement Cloudinary upload for image reference
+- [x] Start development server for testing
+- [x] Fix undefined variable errors in handleSubmit (uploadedImage -> uploadedImages, setUploadedImage -> setUploadedImages, setImagePreview -> setImagePreviews)
+- [x] Update handleSubmit to handle multiple images upload to Cloudinary and send URLs in email
+- [x] Fix compressImage function by adding img.src assignment
+- [x] Fix JSX Image component usage by using ImageIcon
